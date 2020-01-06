@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		01C3D318BBF85618E00596B7 /* Pods_FileConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FileConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30851754D320A7D297BC4725 /* Pods-FileConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileConverter.release.xcconfig"; path = "Target Support Files/Pods-FileConverter/Pods-FileConverter.release.xcconfig"; sourceTree = "<group>"; };
-		B1BF702A1FE2F42B00110328 /* FileConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BF702A1FE2F42B00110328 /* TMusicConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMusicConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BF702D1FE2F42B00110328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1BF702F1FE2F42B00110328 /* FileConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileConverter.swift; sourceTree = "<group>"; };
 		B1BF70311FE2F42B00110328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		B1BF702B1FE2F42B00110328 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B1BF702A1FE2F42B00110328 /* FileConverter.app */,
+				B1BF702A1FE2F42B00110328 /* TMusicConverter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,7 +108,7 @@
 			);
 			name = FileConverter;
 			productName = FileConverter;
-			productReference = B1BF702A1FE2F42B00110328 /* FileConverter.app */;
+			productReference = B1BF702A1FE2F42B00110328 /* TMusicConverter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -331,17 +331,18 @@
 				CODE_SIGN_ENTITLEMENTS = FileConverter/FileConverter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9R95T9BB7Q;
 				INFOPLIST_FILE = FileConverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LINKER_DISPLAYS_MANGLED_NAMES = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = io.audiokit.FileConverter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = trillion.Develope.TMusicConverter;
+				PRODUCT_NAME = TMusicConverter;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -355,17 +356,18 @@
 				CODE_SIGN_ENTITLEMENTS = FileConverter/FileConverter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9R95T9BB7Q;
 				INFOPLIST_FILE = FileConverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LINKER_DISPLAYS_MANGLED_NAMES = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_BUNDLE_IDENTIFIER = io.audiokit.FileConverter;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = trillion.Develope.TMusicConverter;
+				PRODUCT_NAME = TMusicConverter;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
