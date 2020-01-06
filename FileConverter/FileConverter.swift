@@ -207,10 +207,18 @@ class FileConverter: NSViewController {
     func showErrors() {
         print("error for : \(errorList)")
         
-        (errorList as NSArray).write(to: (outputPathControl.url?.appendingPathComponent("error.plist"))!, atomically: true)
+        if errorList.count > 0 {
+            (errorList as NSArray).write(to: (outputPathControl.url?.appendingPathComponent("error.plist"))!, atomically: true)
+            
+            guard let window = view.window else { return }
 
+            let alert = NSAlert()
+            alert.addButton(withTitle: "OK")
+            alert.messageText = "呜呜呜 有文件转码错误 请查看 error.plist"
+            alert.informativeText = "个别文件错误"
+            alert.beginSheetModal(for: window, completionHandler: nil)
+        }
     }
-
 }
 
 /// Handle Window Events
